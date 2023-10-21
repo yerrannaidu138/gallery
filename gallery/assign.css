@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Playfair+Display&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0vh;
+    /* transition: all 0.5s; */
+}
+body{
+    width: 100%;
+    height: 280vh;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: transparent;
+    position: absolute;
+    left: 14%;
+    top: 10%;
+    font-size: 42px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 4px;
+    background-image: linear-gradient(90deg,green,yellow,orange,red,orange,yellow,green);
+    background-size: 1200px;
+    background-position: 1200px;
+    -webkit-background-clip: text;
+    animation: ani 2s infinite linear both;
+    
+}
+@keyframes ani {
+    from{
+        background-position: 1200px;
+    }
+    to{
+        background-position: 0px;
+    }
+}
+
+#con1{
+    width: 99%;
+    height: 98%;
+    background-color: black;
+}
+#con2{
+    width: 100%;
+    height: 90%;
+    /* background-color: orange; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    margin-top: 6%;
+    /* transition: transform 1s; */
+}
+img:hover{
+    animation: ani1 0.5s forwards;
+}
+@keyframes ani1 {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.05);
+    }
+}
+#bigImage{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(54, 44, 44, 0.57);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    /* display: block; */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+#bigimg{
+    width: 80%;
+    height: 80%;
+    /* background-image: url(../../asset/images/Gallery/10.jpg); */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
+}
+#close,#cloeGallearyEdit{
+    color: white;
+    font-size: 45px;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    cursor: pointer;
+}
+#editButton{
+    position: absolute;
+    bottom: 10px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#container{
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+    display: none;
+    position: absolute;
+    z-index: 15;
+    top: 2%;
+    /* left: 2%; */
+}
+#photoDiv{
+    width: 58%;
+    height: 100vh;
+    background-color:antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#imgCon{
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    background-size: 70% 40vh;
+    background-repeat: no-repeat;
+    background-color: red;
+}
+img{
+    width: 69%;
+    border-radius: 3%;
+}
+label{
+    font-weight: bolder;
+    font-size: 18px;
+}
+#filterDiv{
+    width: 21%;
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.filter{
+    width: 100%;
+    height: 11.11vh;
+    margin-left: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+input{
+    width: 75%;
+}
+#transformDiv{
+    width: 21%;
+    height: 100vh;
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.transform{
+    height: 11.11vh;
+    margin-left: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+

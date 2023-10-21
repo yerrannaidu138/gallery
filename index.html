@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="./gallery/assign3.js" defer></script>
+    <link rel="stylesheet" href="./gallery/assign.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="bigImage">
+        <span id="close" onclick="closewindow()">X</span>
+        <div id="bigimg">
+
+        </div>
+        <input type="button" id="editButton" value="edit Image" onclick="openEditWindow()">
+    </div>
+    <div id="con1">
+        <h1>
+            Gallery
+        </h1>
+        <div id="con2">
+            <img onmousedown="passSrc(this.src)" src="./gallery/1.jpg">
+            <img onmousedown="passSrc(this.src)" src="./gallery/2.jpg">
+            <img onmousedown="passSrc(this.src)" src="./gallery/3.jpg">
+            <img onmousedown="passSrc(this.src)" src="./gallery/4.jpg">
+            <img onmousedown="passSrc(this.src)" src="./gallery/5.jpg">
+            <img onmousedown="passSrc(this.src)" src="./gallery/6.jpg">
+            <img onmousedown="passSrc(this.src)" src="./gallery/7.jpg">
+            <img onmousedown="passSrc(this.src)" src="./gallery/8.jpg">
+            <img onmousedown="passSrc(this.src)" src="./gallery/9.jpg">
+            <img onmousedown="passSrc(this.src)" src="./gallery/10.jpg">
+            <img onmousedown="passSrc(this.src)" src="./gallery/11.jpg">
+            <img onmousedown="passSrc(this.src)" src="./gallery/12.jpg">
+            <img onmousedown="passSrc(this.src)" src="./gallery/13.jpg">
+            <img onmousedown="passSrc(this.src)" src="./gallery/14.jpg">
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div id="container">
+        <span id="cloeGallearyEdit" onclick="closewindow()">X</span>
+        <div id="photoDiv">
+            <div id="imgCon">
+                <!-- <img src="../../asset/images/tiger-2535888_1280.jpg" alt="" id="image1"> -->
+            </div>
+        </div>
+        <div id="filterDiv">
+            <div class="filter" id="filter1">
+                <label>Blur</label>
+                <input type="range" id="a" oninput="collectValue()" min="0" max="100" value="0">
+            </div>
+            <div class="filter" id="filter2">
+                <label>Brightness</label>
+                <input type="range" id="b" min="0" max="200" value="100" oninput="collectValue()">
+            </div>
+            <div class="filter" id="filter3">
+                <label>Contrast</label>
+                <input type="range" id="c" min="0" max="500" value="100" oninput="collectValue()">
+            </div>
+            <div class="filter" id="filter4">
+                <label>GrayScale</label>
+                <input type="range" id="d" min="0" max="100" value="0" oninput="collectValue()">
+            </div>
+            <div class="filter" id="filter5">
+                <label>Hue-Rotate</label>
+                <input type="range" id="e" min="0" max="360" value="0" oninput="collectValue()">
+            </div>
+            <div class="filter" id="filter6">
+                <label>Invert</label>
+                <input type="range" id="f" min="0" max="100" value="0" oninput="collectValue()">
+            </div>
+            <div class="filter" id="filter7">
+                <label>Opacity</label>
+                <input type="range" id="g" min="0" max="100" value="100" oninput="collectValue()">
+            </div>
+            <div class="filter" id="filter8">
+                <label>Saturate</label>
+                <input type="range" id="h" min="0" max="500" value="100" oninput="collectValue()">
+            </div>
+            <div class="filter" id="filter9">
+                <label              >Sepia</label>
+                <input type="range" id="i" min="0" max="100" value="0" oninput="collectValue()">
+            </div>
+        </div>
+        <div id="transformDiv">
+            <div class="transform" id="transform1">
+                <label>RotateZ</label>
+                <input type="range" id="j" min="0" max="360" value="0" oninput="collectValue()">
+            </div>
+            <div class="transform" id="transform2">
+                <label>RotateX</label>
+                <input type="range" id="k" min="0" max="360" value="0" oninput="collectValue()">
+            </div>
+            <div class="transform" id="transform3">
+                <label>RotateY</label>
+                <input type="range" id="l" min="0" max="360" value="0" oninput="collectValue()">
+            </div>
+            <div class="transform" id="transform4">
+                <label>Scale</label>
+                <input type="range" id="m" min="1" max="3" value="1" oninput="collectValue()">
+            </div>
+            <div class="transform" id="transform5">
+                <label>ScaleX</label>
+                <input type="range" id="n" min="1" max="3" value="1" oninput="collectValue()">
+
+            </div>
+            <div class="transform" id="transform6">
+                <label>ScaleY</label>
+                <input type="range" id="o" min="1" max="3" value="1" oninput="collectValue()">
+            </div>
+            <div class="transform" id="transform7">
+                <label>Skew</label>
+                <input type="range" id="p" min="0" max="100" value="0" oninput="collectValue()">
+            </div>
+            <div class="transform" id="transform8">
+                <label>SkewX</label>
+                <input type="range" id="q" min="0" max="100" value="0" oninput="collectValue()">
+            </div>
+            <div class="transform" id="transform9">
+                <label>SkewY</label>
+                <input type="range" id="r" min="0" max="100" value="0" oninput="collectValue()">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
